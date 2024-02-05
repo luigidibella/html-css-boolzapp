@@ -5,8 +5,85 @@
 }
 
 body {
- background-color: brown; 
+  background-color: #009688; 
 }
+
+/* DEBUG */
+.debug{
+  background-color: rgba(255,0,0,.2);
+  border: 1px solid black;
+}
+
+.debug div,
+.debug nav{
+  border: 1px solid black;
+}
+
+main {
+
+}
+
+.interface {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90vw;
+  height: 95vh;
+  display: flex;
+  background-color: white;
+}
+
+/* PROFILE SECTION*/
+.profile {
+  width: 30%;
+}
+
+.top-bar {
+  height: 70px;
+  background-color: #eaeaea;
+}
+
+.notifications {
+  height: 80px;
+  background-color: #8edafc;
+}
+
+.search-bar {
+  height: 50px;
+  background-color: #fafafa;
+}
+
+.users-bar {
+  height: 100vh;
+  overflow: visible;
+}
+
+.user {
+  height: 80px;
+}
+/* /PROFILE SECTION*/
+
+/* CHAT SECTION*/
+.chat {
+  width: 70%;
+  background-color: #f3eeea;
+}
+
+.chat-box {
+  height: calc(100vh - 70px);
+  overflow: visible;
+  background-image: url(/assets/img/mine.jpg);
+}
+
+.typing-box {
+  height: 70px;
+}
+/* /CHAT SECTION*/
 
 /************************************************
     SOLUZIONE RESPONSIVE
@@ -14,12 +91,12 @@ body {
 
 @media screen and (min-width: 540px){
   body{
-    background-color: green
+    /* background-color: green */
   }
 } 
 
 @media screen and (min-width: 992px){
   body{
-    background-color: blue
+    /* background-color: blue */
   }
 }
