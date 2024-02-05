@@ -26,6 +26,9 @@ main {
 img {
   width: 100%;
 }
+i {
+  font-size: 1.2rem;
+}
 
 .interface {
   width: 100vw;
@@ -48,8 +51,19 @@ img {
 }
 
 .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 70px;
   background-color: #eaeaea;
+}
+
+.options {
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 25px;
+  color: #b1b1b1;
 }
 
 .notifications {
@@ -60,7 +74,7 @@ img {
 .notifications .pic {
 }
 
-.notifications .pic i {
+.notifications .pic i {                /* DEBUG */
   color: #8edafc;
   padding: 17px 15px;
   border-radius: 50%;
@@ -98,6 +112,10 @@ img {
 }
 
 .info {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: flex-start;
 
 }
 /* /PROFILE SECTION*/
@@ -109,8 +127,9 @@ img {
   background-color: #f3eeea;
 }
 
-.chat .top-bar {
-
+.chat .top-bar .user {
+  height: 100%;
+  border-bottom: none;
 }
 
 .chat-box {
