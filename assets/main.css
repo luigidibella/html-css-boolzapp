@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #009688; 
+  background-color: #009688;
 }
 
 /* DEBUG */
@@ -26,6 +26,15 @@ main {
 img {
   width: 100%;
 }
+
+ul {
+
+}
+
+li {
+  list-style: none;
+}
+
 i {
   font-size: 1.2rem;
 }
@@ -67,6 +76,8 @@ i {
 }
 
 .notifications {
+  display: flex;
+  align-items: center;
   height: 80px;
   background-color: #8edafc;
 }
@@ -81,9 +92,37 @@ i {
   background-color: white;
 }
 
+.link a {
+  color: #4f7485;
+}
+
 .search-bar {
   height: 50px;
+  padding: 7px;
   background-color: #fafafa;
+}
+
+.search-bar .inner {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  border: 1px solid #f5f5f5;
+  background-color: white;
+}
+
+.search-bar .inner i {
+  margin: 10px 12px 8px;
+  color: #b6b9bb;
+}
+
+.search-bar .inner input {
+  border: none;
+  width: calc(100% - 7px);
+  color: #b6b9bb;
+}
+
+.search-bar .inner input::placeholder{
+  color: #b6b9bb;
 }
 
 .users-bar {
