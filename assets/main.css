@@ -24,8 +24,8 @@ main {
 }
 
 .interface {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,7 @@ main {
 
 .container {
   width: 90vw;
-  height: 95vh;
+  height: 90vh;
   display: flex;
   background-color: white;
 }
@@ -59,8 +59,8 @@ main {
 }
 
 .users-bar {
-  height: 100vh;
-  overflow: visible;
+  height: calc(100% - 200px);
+  overflow: auto;
 }
 
 .user {
@@ -75,13 +75,14 @@ main {
 }
 
 .chat-box {
-  height: calc(100vh - 70px);
-  overflow: visible;
+  height: calc(100% - 140px);
+  overflow: auto;
   background-image: url(/assets/img/mine.jpg);
 }
 
 .typing-box {
   height: 70px;
+  background-color: #f3eeea;
 }
 /* /CHAT SECTION*/
 
