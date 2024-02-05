@@ -57,6 +57,16 @@ img {
   background-color: #8edafc;
 }
 
+.notifications .pic {
+}
+
+.notifications .pic i {
+  color: #8edafc;
+  padding: 17px 15px;
+  border-radius: 50%;
+  background-color: white;
+}
+
 .search-bar {
   height: 50px;
   background-color: #fafafa;
@@ -78,7 +88,7 @@ img {
   justify-content: center;
   align-items: center;
   width: 80px;
-  height: 80px;
+  height: 100%;
 }
 
 .pic img {
@@ -95,11 +105,12 @@ img {
 /* CHAT SECTION*/
 .chat {
   width: 70%;
+  border-left: 1px solid #d6d6d6;
   background-color: #f3eeea;
 }
 
 .chat .top-bar {
-  border-right: 1px solid #d6d6d6;
+
 }
 
 .chat-box {
