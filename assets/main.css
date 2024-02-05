@@ -23,6 +23,10 @@ main {
 
 }
 
+img {
+  width: 100%;
+}
+
 .interface {
   width: 100vw;
   height: 100vh;
@@ -64,7 +68,27 @@ main {
 }
 
 .user {
+  display: flex;
   height: 80px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+}
+
+.pic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.info {
+
 }
 /* /PROFILE SECTION*/
 
@@ -72,6 +96,10 @@ main {
 .chat {
   width: 70%;
   background-color: #f3eeea;
+}
+
+.chat .top-bar {
+  border-right: 1px solid #d6d6d6;
 }
 
 .chat-box {
