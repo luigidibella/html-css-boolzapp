@@ -286,14 +286,35 @@ i {
 SOLUZIONE RESPONSIVE
 ************************************************/
 
-@media screen and (min-width: 540px){
+@media screen and (max-width: 992px){
   body{
-    /* background-color: green */
+    background-color: rgb(27, 147, 57)
   }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .profile {
+    width: max-content;
+  }
+
+  .profile .top-bar .options,
+  .profile .notifications,
+  .profile .search-bar,
+  .profile .user .info{
+    display: none;
+  }
+
+  .profile .users-bar {
+    height: calc(100% - 170px);
+  }
+
 } 
 
-@media screen and (min-width: 992px){
+@media screen and (max-width: 540px){
   body{
-    /* background-color: blue */
+    background-color: rgb(147, 6, 6)
   }
 }
