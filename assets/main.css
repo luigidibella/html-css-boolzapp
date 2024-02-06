@@ -135,7 +135,7 @@ i {
 /* USERS-BAR */
 .users-bar {
   height: calc(100% - 200px);
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 .user {
@@ -185,7 +185,7 @@ i {
   display: flex;
   justify-content: center;
   height: calc(100% - 140px);
-  overflow: auto;
+  overflow-y: scroll;
   background-image: url(/assets/img/mine.jpg);
 }
 
@@ -273,11 +273,11 @@ i {
 .typing-box .input-text input {
   width: calc(100% - 20px);
   border: none;
-  color: #a3a3a3;
+  color: #afafaf;
 }
 
 .typing-box .input-text input::placeholder {
-  color: #a3a3a3;
+  color: #afafaf;
 }
 /* /TYPING-BOX */
 /* /CHAT SECTION*/
@@ -316,5 +316,22 @@ SOLUZIONE RESPONSIVE
 @media screen and (max-width: 540px){
   body{
     background-color: rgb(147, 6, 6)
+  }
+
+  .profile,
+  .chat .top-bar .options,
+  .typing-box i{
+    display: none;
+  }
+  
+  .chat {
+    width: 100vw;
+    height: 100vh;
+    border-left: none;
+  }
+
+  .typing-box .input-text {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
