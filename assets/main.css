@@ -5,7 +5,9 @@
 }
 
 body {
-  background-color: #009688;
+  /* background-color: #009688; */
+  background: linear-gradient(to bottom, #009688 0%,#009688 15%, #DADBD4 15%, #DADBD4 85%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* DEBUG */
@@ -163,7 +165,25 @@ i {
   flex-direction: column;
   justify-content:center;
   align-items: flex-start;
-  
+}
+
+.users-bar .user .info {
+  width: calc(100% - 130px)
+}
+
+.users-bar .user .info .last-message span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b8bbbd;
+}
+
+.users-bar .user .time {
+  padding: 15px 9px 0;
+}
+
+.users-bar .user .time span {
+  font-size: 10px;
+  color: #b6b9bb;
 }
 /* /USERS-BAR */
 /* /PROFILE SECTION*/
@@ -181,6 +201,12 @@ i {
 }
 
 /* CHAT-BOX */
+.chat .top-bar .user .info span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7376;
+}
+
 .chat-box {
   display: flex;
   justify-content: center;
@@ -223,6 +249,7 @@ i {
 }
 
 .top-inner p{
+  font-weight: 500;
 }
 
 .top-inner .tick i{
@@ -233,12 +260,12 @@ i {
   
 }
 
-.time {
+.bottom-inner .time {
   display: flex;
   justify-content: flex-end;
 }
 
-.time span{
+.bottom-inner .time span{
   font-size: 10px;
   padding: 8px 5px;
   color: #b6b9bb;
@@ -303,14 +330,14 @@ SOLUZIONE RESPONSIVE
   .profile .top-bar .options,
   .profile .notifications,
   .profile .search-bar,
-  .profile .user .info{
+  .profile .user .info,
+  .profile .user .time{
     display: none;
   }
 
   .profile .users-bar {
     height: calc(100% - 170px);
   }
-
 } 
 
 @media screen and (max-width: 540px){
