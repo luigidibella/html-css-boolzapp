@@ -224,7 +224,7 @@ i {
 }
 
 .message {
-  width: 436px;
+  max-width: 436px;
   border-radius: 10px;
   background-color: white;
 }
